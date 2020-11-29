@@ -1,0 +1,21 @@
+#!/bin/bash
+VERSION=$1
+COMMIT_MESSAGE=$2
+
+if [ -z $VERSION ]
+then
+    echo "Specify release vesrion in semver format"
+    exit
+fi
+
+if [ -z $COMMIT_MESSAGE ]
+then
+    echo "Describe you latest changes"
+    exit
+fi
+
+git add .
+git commit -a -m "$COMMIT_MESSAGE"
+git push
+git tag "$VERSION"
+git push --tags

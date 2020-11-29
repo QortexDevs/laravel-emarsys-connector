@@ -1,0 +1,38 @@
+{
+    "name": "qortex/laravel-emarsys-connector",
+    "description": "Proivdes Laravel wrapper for qortex/php-emarsys-connector package",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Qortex Dev Team",
+            "email": "welcome@qortex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8",
+        "laravel/laravel": "^7|^8",
+        "qortex/php-emarsys-connector": "^0.0.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qortex\\Laravel\\Emarsys\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Qortex\\Laravel\\Emarsys\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+				"Qortex\\Laravel\\Emarsys\\Providers\\LaravelEmarsysServiceProvider"
+            ]
+        }
+    }
+}
