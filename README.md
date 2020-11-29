@@ -1,4 +1,4 @@
-# Proivdes Laravel wrapper for [qortex/php-emarsys-connector](https://github.com/QortexDevs/php-emarsys-connector) package
+# Provides connection to Emarsys Omnichannel Customer Engagement Platform API v2
 
 ## Install
 
