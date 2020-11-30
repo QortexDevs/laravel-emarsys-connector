@@ -15,7 +15,7 @@ Then, use these credentials as username and secret in `config/emarsys.php` file 
 ```php
 return [
     'username' => env('EMARSYS_USERNAME', ''),
-    'secret' => 'env('EMARSYS_SECRET', ''),
+    'secret' => env('EMARSYS_SECRET', ''),
 ];
 ```
 
@@ -23,8 +23,8 @@ Optionally, you can change Emarsys API url (which defaults to `https://api.emars
 ```php
 return [
     'username' => env('EMARSYS_USERNAME', ''),
-    'secret' => 'env('EMARSYS_SECRET', ''),
-    'apiUrl' => 'env('EMARSYS_API_URL', ''),
+    'secret' => env('EMARSYS_SECRET', ''),
+    'apiUrl' => env('EMARSYS_API_URL', ''),
 ];
 ```
 
