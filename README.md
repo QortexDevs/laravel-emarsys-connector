@@ -11,11 +11,20 @@ $ php artisan vendor:publish
 
 First, obtain credentials for [Emarsys API User](https://help.emarsys.com/hc/en-us/articles/115004740329-your-account-security-settings#api-users).
 
-Then, use these credentials as username and secret in `config/emarsys.php` file:
+Then, use these credentials as username and secret in `config/emarsys.php` file or via environmental variables:
 ```php
 return [
-    'username' => 'username',
-    'secret' => 'secret',
+    'username' => env('EMARSYS_USERNAME', ''),
+    'secret' => 'env('EMARSYS_SECRET', ''),
+];
+```
+
+Optionally, you can change Emarsys API url (which defaults to `https://api.emarsys.net/api/v2/`) if you are behing reverse proxy or something"
+```php
+return [
+    'username' => env('EMARSYS_USERNAME', ''),
+    'secret' => 'env('EMARSYS_SECRET', ''),
+    'apiUrl' => 'env('EMARSYS_API_URL', ''),
 ];
 ```
 
