@@ -19,7 +19,7 @@ return [
 ];
 ```
 
-Optionally, you can change Emarsys API url (which defaults to `https://api.emarsys.net/api/v2/`) if you are behing reverse proxy or something"
+Optionally, you can change Emarsys API url (which defaults to `https://api.emarsys.net/api/v2/`) if you are behing reverse proxy or something:
 ```php
 return [
     'username' => env('EMARSYS_USERNAME', ''),
